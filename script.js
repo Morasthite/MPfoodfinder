@@ -37,7 +37,6 @@ function foursquare_call(options){
         },
         success: function (response){
           //call the fourSquareReturn function with the response as a parameter to grab key object values for later use
-          console.log("fav after success: ",response.favorite_restaurants);
           fourSquareReturn(response.fourSquare_search_results, response.favorite_restaurants);
         },
         error: function(response){
@@ -108,6 +107,7 @@ function convert_to_miles(meters) {
 }
 
 function distance_sort(array,fav) {
+    console.log("fav inside distance sort: ", fav);
     var swapped ;
     do {
         swapped = false;
