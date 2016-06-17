@@ -11,9 +11,9 @@ if (empty($_SESSION["id"])) {
 }
 $_POST['search_option']['option'] = 'random';
 $_POST['search_option']['category'] = 'sushi';
-//$_POST["latitude"] = 33.532029;
-//$_POST["longitude"] = -117.702148;
-//$_POST['radius'] = '5000';
+$_POST["latitude"] = 33.532029;
+$_POST["longitude"] = -117.702148;
+$_POST['radius'] = '5000';
 $search_radius = $_POST['radius'];
 $id = $_SESSION['id'];
 //print($id);

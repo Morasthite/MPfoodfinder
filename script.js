@@ -250,23 +250,23 @@ function results_to_DOM (array,fav) {
       /** MORE INFO **/
       var moreInfoDiv = $("<div>").addClass("more-info-holder container-fluid");
       var btn_div = $("<div>").addClass("button-holder");
-      // var i_left = $("<i>").addClass("fa fa-arrow-left");
-      // var i_right = $("<i>").addClass("fa fa-arrow-right");
-      // var prev_div = $("<div>").addClass("col-xs-4 result-button");
-      // var next_div = $("<div>").addClass("col-xs-4 result-button");
+         var i_left = $("<i>").addClass("fa fa-arrow-left");
+         var i_right = $("<i>").addClass("fa fa-arrow-right");
+         var prev_div = $("<div>").addClass("col-xs-4 result-button");
+         var next_div = $("<div>").addClass("col-xs-4 result-button");
       var nav_div = $("<div>").addClass("col-xs-12 result-button");
       var nav_text = $("<p>").text("Let's Go!");
-      // var next_btn = $("<div>").addClass("next-button").attr("data-position",i);
-      // var prev_btn = $("<div>").addClass("prev-button").attr("data-position",i);
+         var next_btn = $("<div>").addClass("next-button").attr("data-position",i);
+         var prev_btn = $("<div>").addClass("prev-button").attr("data-position",i);
       var nav_button = $("<div>").addClass("navigation-button");
       //closure for the next button to call the next_card function for moving to the next card
-      // next_btn.on("click", function (){
-      //   next_card(this , 1);
-      // });
+         next_btn.on("click", function (){
+           next_card(this , 1);
+         });
       //closure for the prev button to call the prev_card function for moving back to the previous card
-      // prev_btn.on("click", function (){
-      //   prev_card(this , 1);
-      // });
+         prev_btn.on("click", function (){
+           prev_card(this , 1);
+         });
       //closure for making the navigation button link to the maps application
       (function(){
           var inner_i = i;
@@ -289,11 +289,11 @@ function results_to_DOM (array,fav) {
       distance_container.append(i_distance, distance);
       rating_container.append(i_rating, rating);
       price_container.append(i_price, price);
-      // prev_btn.append(i_left);
-      // next_btn.append(i_right);
+         prev_btn.append(i_left);
+         next_btn.append(i_right);
       nav_button.append(nav_text);
-      // prev_div.append(prev_btn);
-      // next_div.append(next_btn);
+         prev_div.append(prev_btn);
+         next_div.append(next_btn);
       nav_div.append(nav_button);
       btn_div.append(nav_div);
       addressDiv.append(street, city_state_zip, phone);
