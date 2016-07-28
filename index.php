@@ -1,8 +1,8 @@
 <?php
 session_start();
 require_once('credentials.php');
-require_once('../prototypes_c8/php_oauth_facebook/libraries/facebook-php-sdk-v4-5.0.0/src/Facebook/autoload.php');
-//require_once('php_oauth_facebook/libraries/facebook-php-sdk-v4-5.0.0/src/Facebook/autoload.php');
+//require_once('../prototypes_c8/php_oauth_facebook/libraries/facebook-php-sdk-v4-5.0.0/src/Facebook/autoload.php');
+require_once('library/facebook-php-sdk-v4-5.0.0/src/Facebook/autoload.php');
 $fb = new Facebook\Facebook([
     'app_id'                => FACEBOOK_APP_ID,
     'app_secret'            => FACEBOOK_SECRET,

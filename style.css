@@ -58,30 +58,30 @@ button:focus {
 
 #random {
     position: absolute;
-    left: 0;
-    top: 50%;
+    left: 50%;
+    top: 25%;
     height: 100%;
     width: 100%;
     text-align: center;
-    margin-top: -43px;
     color: #FFF;
     text-shadow: 1px 3px 4px black;
     font-family: 'Pacifico';
+    transform: translateX(-50%);
 }
 
 .circle {
     position: absolute;
-    left: 33%;
+    left: 50%;
     top: 50%;
     height: 175px;
     width: 175px;
-    margin: -25px 0 0 -25px;
     cursor: pointer;
     border-radius: 999em;
     z-index: 0;
     background: #ffaa00;
     box-shadow: 0 6px 9px 0 rgba(0, 0, 0, 0.75);
     font-size: 36px;
+    transform: translateX(-50%);
 }
 
 .circle > #show {
