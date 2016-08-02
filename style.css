@@ -276,7 +276,7 @@ button:focus {
     color: white;
 }
 .prev-button,.next-button{
-    background: transparent;
+    background: #49b3e8;
 }
 .prev-button i:hover,
 .next-button i:hover {
