@@ -304,12 +304,12 @@ function results_to_DOM (array,fav) {
       $("#results-page").append(div.attr("id","card" + i).css({
         //the top position is set for each card so that each card is slightly lower than the previous.
         //The cards start off below the viewable area by adding the window_height to the top position value, so they can slide up later for the page transition
-        top: 70 + top_position + window_height + "px",
+        top: 95 + top_position + window_height + "px",
         //the z-index is set for each card is set beginning at 10, so the the top most card will display on top of the other cards and so on for the subsequent cards
         'z-index': "+"+z_index
       }));
       //top_position is incrementend to lower each card
-      top_position += 15;
+      top_position += 10;
       //z_index is decremented so later cards to not show above cards that were created first
       z_index -= 1;
       //the unique id for each card is pushed to an array for later use
@@ -439,7 +439,7 @@ function click_circle() {
         //page is routed to the results page via Angular routing.    
             window.location.href = "#results";
         //the below jquery method applies 'background-color' to the entire body of the HTML        
-            $("body").css('background-color', '#ffaa00 ');
+            $("body").css('background-color', '#ff0000 ');
         }
       //The 'expanded' class is added after 300 milliseconds.
       }, 300).addClass('expanded');

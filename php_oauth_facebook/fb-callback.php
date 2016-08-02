@@ -22,6 +22,7 @@ try {
 } catch(Facebook\Exceptions\FacebookSDKException $e) {
     // When validation fails or other local issues
     echo 'Facebook SDK returned an error: ' . $e->getMessage();
+print_r($_SESSION);
     exit;
 }
 //did we get the access token?  better check!
