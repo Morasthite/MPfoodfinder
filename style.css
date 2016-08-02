@@ -23,7 +23,7 @@ button:focus {
 }
 
 #lunch_heading {
-    font-size: 12vh;
+    font-size: 45px;
     color: white;
     text-shadow: 0 5px 8px black;
     padding: 1vh 0 3vh 0;
@@ -94,7 +94,7 @@ button:focus {
 }
 
 .circle:hover {
-    background-color: rgb(255, 196, 15);
+    background-color: #cc0000;
 }
 
 .circle:active {
@@ -194,7 +194,6 @@ button:focus {
 .result-card {
     max-width: 400px;
     max-height: 600px;
-    #position: absolute !important;
     height: 80%;
     width: 90%;
     position: relative;
