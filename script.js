@@ -365,8 +365,8 @@
           nav_button.append(nav_text);
              prev_div.append(prev_btn);
              next_div.append(next_btn);
-          nav_div.append(nav_button);
           nav_div.append(prev_div);
+          nav_div.append(nav_button);
           nav_div.append(next_div);
           btn_div.append(nav_div);
           addressDiv.append(street, city_state_zip, phone);
