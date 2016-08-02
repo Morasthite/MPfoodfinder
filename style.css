@@ -260,12 +260,12 @@ button:focus {
     color: black;
 }
 
-.navigation-button{
-    margin-top: 6%;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+.navigation-button,.prev-button,.next-button{
+    #margin-top: 6%;
+    #position: relative;
+    #top: 50%;
+    #left: 50%;
+    #transform: translate(-50%,-50%);
     height: 100%;
     width: 58%;
     /*border-radius: 50%;*/
@@ -276,36 +276,36 @@ button:focus {
     color: white;
 }
 
-.prev-button {
-    margin-top: 6%;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    height: 100%;
-    width: 58%;
-    /*border-radius: 50%;*/
-    cursor: pointer;
-    z-index: 0;
-    background: #00cbff;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    color: white;
-}
-.next-button {
-    margin-top: 6%;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    height: 100%;
-    width: 58%;
-    /*border-radius: 50%;*/
-    cursor: pointer;
-    z-index: 0;
-    background: #00cbff;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    color: white;
-}
+/*.prev-button {*/
+    /*margin-top: 6%;*/
+    /*position: relative;*/
+    /*top: 50%;*/
+    /*#left: 50%;*/
+    /*#transform: translate(-50%,-50%);*/
+    /*height: 100%;*/
+    /*width: 58%;*/
+    /*!*border-radius: 50%;*!*/
+    /*cursor: pointer;*/
+    /*z-index: 0;*/
+    /*background: #00cbff;*/
+    /*box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);*/
+    /*color: white;*/
+/*}*/
+/*.next-button {*/
+    /*margin-top: 6%;*/
+    /*position: relative;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*transform: translate(-50%,-50%);*/
+    /*height: 100%;*/
+    /*width: 58%;*/
+    /*!*border-radius: 50%;*!*/
+    /*cursor: pointer;*/
+    /*z-index: 0;*/
+    /*background: #00cbff;*/
+    /*box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);*/
+    /*color: white;*/
+/*}*/
 
 
 
