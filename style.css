@@ -78,7 +78,8 @@ button:focus {
     cursor: pointer;
     border-radius: 999em;
     z-index: 0;
-    background: #ffaa00;
+    /*background: #ffaa00;*/
+    background: #ff0000;
     box-shadow: 0 6px 9px 0 rgba(0, 0, 0, 0.75);
     font-size: 36px;
     transform: translateX(-50%);
@@ -191,8 +192,10 @@ button:focus {
     width: 100vw;
 }
 .result-card {
-    position: absolute !important;
-    height: 86%;
+    max-width: 400px;
+    max-height: 600px;
+    #position: absolute !important;
+    height: 80%;
     width: 90%;
     position: relative;
     left: 50%;
