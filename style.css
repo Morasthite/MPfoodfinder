@@ -104,12 +104,10 @@ button:focus {
     color: #fff;
     background-color: #4C72A0;
     box-shadow: 0 6px 9px 0 rgba(0, 0, 0, 0.75);
-    /*border-color: #ffaa00;*/
 }
 
 #login-button:hover{
     border: 1px solid #5fa7e8;
-    /*background-color: #4f84b5;*/
 }
 
 #login-button:active,
@@ -157,7 +155,8 @@ button:focus {
 
 .carousel-inner {
     height: 90vh;
-    border: 2px solid orange;}
+    border: 2px solid orange;
+}
 .result-img-holder{
     border: 2px solid green;
     height: 40vh;
@@ -186,14 +185,11 @@ button:focus {
     border: 1px solid greenyellow;
     left: 10vw;
 }
-
-
 #results-page {
     overflow: hidden;
     height: 100vh;
     width: 100vw;
 }
-
 .result-card {
     position: absolute !important;
     height: 86%;
@@ -203,7 +199,6 @@ button:focus {
     transform: translateX(-50%);
     box-shadow: 0 5px 5px rgba(0,0,0,0.19), 0 2px 2px rgba(0,0,0,0.23);
 }
-
 .result-image {
     position: relative;
     display: inline-block;
@@ -265,8 +260,22 @@ button:focus {
     color: black;
 }
 
-.navigation-button,
-.next-button,
+.navigation-button{
+    margin-top: 6%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 100%;
+    width: 58%;
+    /*border-radius: 50%;*/
+    cursor: pointer;
+    z-index: 0;
+    background: #00cbff;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    color: white;
+}
+
 .prev-button {
     margin-top: 6%;
     position: relative;
@@ -282,6 +291,23 @@ button:focus {
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     color: white;
 }
+.next-button {
+    margin-top: 6%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 100%;
+    width: 58%;
+    /*border-radius: 50%;*/
+    cursor: pointer;
+    z-index: 0;
+    background: #00cbff;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    color: white;
+}
+
+
 
 .navigation-button:hover,
 .next-button:hover,
@@ -364,6 +390,4 @@ button:focus {
         margin-top: 3px;
         font-size: 2vh;
     }
-
-
 }

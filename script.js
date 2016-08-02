@@ -366,8 +366,8 @@
              prev_div.append(prev_btn);
              next_div.append(next_btn);
           nav_div.append(nav_button);
-          nav_div.append(prev_btn);
-          nav_div.append(next_btn);
+          nav_div.append(prev_div);
+          nav_div.append(next_div);
           btn_div.append(nav_div);
           addressDiv.append(street, city_state_zip, phone);
           moreInfoDiv.append(rating_container, distance_container, price_container, i_hours_container, hours_container, i_category_container, category_container, i_tips_container, tips_container, i_popularity_container, popularity_container, i_url_container, url_container);
