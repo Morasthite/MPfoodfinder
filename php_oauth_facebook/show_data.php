@@ -1,8 +1,6 @@
 <?php
-/* session, connect data, yada yada*/
 session_start();
 require_once('../credentials.php');
-//require_once('libraries/facebook-php-sdk-v4-5.0.0/src/Facebook/autoload.php');
 require_once('../library/facebook-php-sdk-v4-5.0.0/src/Facebook/autoload.php');
 $fb = new Facebook\Facebook([
     'app_id'                => FACEBOOK_APP_ID,
@@ -27,7 +25,6 @@ $_SESSION['fb_id'] = $nodeData['id'];
 $name=$nodeData['name']; echo"$name";
 $id = $nodeData['id']; echo"$id";
 $age_range = $nodeData['age_range']['min'];
-
 
 $query = "SELECT * FROM `users` WHERE `fb_id` = '$id'";
     $result = mysqli_query($conn, $query);
@@ -74,7 +71,6 @@ echo "<br> session:";
 }///while
 } //if
 	}//else
-
 
 header('location: ../index.php');
 //print_r($_SESSION);
