@@ -1,18 +1,17 @@
 <?php
-session_start();
+if (!session_id()) {
+    session_start();
+}
+//session_start();
 require_once('../credentials.php');
-//then you'll need to include the facebook sdk
 require_once('../library/facebook-php-sdk-v4-5.0.0/src/Facebook/autoload.php');
-/*
-make your session, load your creds, facebook sdk, and make the facebook object
-*/
+
 $fb = new Facebook\Facebook([
     'app_id'                => FACEBOOK_APP_ID,
     'app_secret'            => FACEBOOK_SECRET,
     'default_graph_version' => FACEBOOK_GRAPH_VERSION,
 ]);
 $helper = $fb->getRedirectLoginHelper();
-/*check for errors!  maybe make use of a fancy try/catch block!*/
 try {
     $accessToken = $helper->getAccessToken();
 } catch(Facebook\Exceptions\FacebookResponseException $e) {
@@ -22,6 +21,7 @@ try {
 } catch(Facebook\Exceptions\FacebookSDKException $e) {
     // When validation fails or other local issues
     echo 'Facebook SDK returned an error: ' . $e->getMessage();
+print_r($_SESSION);
     exit;
 }
 //did we get the access token?  better check!
