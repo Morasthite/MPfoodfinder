@@ -323,13 +323,13 @@
           var btn_div = $("<div>").addClass("button-holder");
              var i_left = $("<i>").addClass("fa fa-arrow-left");
              var i_right = $("<i>").addClass("fa fa-arrow-right");
-             var prev_div = $("<div>").addClass("col-xs-4 result-button");
-             var next_div = $("<div>").addClass("col-xs-4 result-button");
+             var prev_div = $("<div>").addClass("col-xs-2 result-button");
+             var next_div = $("<div>").addClass("col-xs-2 result-button");
           var nav_div = $("<div>").addClass("col-xs-12 result-button");
           var nav_text = $("<p>").text("Let's Go!");
              var next_btn = $("<div>").addClass("next-button").attr("data-position",i);
              var prev_btn = $("<div>").addClass("prev-button").attr("data-position",i);
-          var nav_button = $("<div>").addClass("navigation-button");
+          var nav_button = $("<div>").addClass("navigation-button col-xs-6");
           //closure for the next button to call the next_card function for moving to the next card
              next_btn.on("click", function (){
                next_card(this , 1);
