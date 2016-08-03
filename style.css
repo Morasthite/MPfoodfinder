@@ -78,8 +78,8 @@ button:focus {
     cursor: pointer;
     border-radius: 999em;
     z-index: 0;
-   // background: #ffaa00;
-    background-color: #ff0000;
+    /*background: #ffaa00;*/
+    background: #ff0000;
     box-shadow: 0 6px 9px 0 rgba(0, 0, 0, 0.75);
     font-size: 36px;
     transform: translateX(-50%);
@@ -105,12 +105,10 @@ button:focus {
     color: #fff;
     background-color: #4C72A0;
     box-shadow: 0 6px 9px 0 rgba(0, 0, 0, 0.75);
-    /*border-color: #ffaa00;*/
 }
 
 #login-button:hover{
     border: 1px solid #5fa7e8;
-    /*background-color: #4f84b5;*/
 }
 
 #login-button:active,
@@ -158,7 +156,8 @@ button:focus {
 
 .carousel-inner {
     height: 90vh;
-    border: 2px solid orange;}
+    border: 2px solid orange;
+}
 .result-img-holder{
     border: 2px solid green;
     height: 40vh;
@@ -187,14 +186,11 @@ button:focus {
     border: 1px solid greenyellow;
     left: 10vw;
 }
-
-
 #results-page {
     overflow: hidden;
     height: 100vh;
     width: 100vw;
 }
-
 .result-card {
     max-width: 400px;
     max-height: 600px;
@@ -206,7 +202,6 @@ button:focus {
     transform: translateX(-50%);
     box-shadow: 0 5px 5px rgba(0,0,0,0.19), 0 2px 2px rgba(0,0,0,0.23);
 }
-
 .result-image {
     position: relative;
     display: inline-block;
@@ -250,12 +245,13 @@ button:focus {
     /* top: 16%; */
     /* transform: translate(-53%, -11%); */
     height: 8%;
-    margin-top: 3px;
+    margin-top: 20px;
     width: 90%;
 }
 
 .result-button {
     height: 100%;
+    padding-right: 0;
 }
 
 .prev-button i,
@@ -268,14 +264,12 @@ button:focus {
     color: black;
 }
 
-.navigation-button,
-.next-button,
-.prev-button {
-    margin-top: 6%;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+.navigation-button,.prev-button,.next-button{
+    #margin-top: 6%;
+    #position: relative;
+    #top: 50%;
+    #left: 50%;
+    #transform: translate(-50%,-50%);
     height: 100%;
     width: 58%;
     /*border-radius: 50%;*/
@@ -284,6 +278,13 @@ button:focus {
     background: #00cbff;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     color: white;
+}
+.prev-button,.next-button{
+    background: #49b3e8;
+}
+.prev-button i:hover,
+.next-button i:hover {
+    color: #00cbff;
 }
 
 .navigation-button:hover,
@@ -305,13 +306,23 @@ button:focus {
 
 .navigation-button p {
     text-align: center;
-    padding-top: 4%;
-    padding-left: 1%;
-    font-size: 3vh;
+    font-size: 1.5em;
     font-family: "Pacifico";
-    text-shadow: 0px 1px 1px black;
+    text-shadow: 0 1px 1px black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
+.prev-button-div {
+    padding-left: 0;
+    padding-right: 0;	
+}
+.next-button-div {
+    padding-left: 0;
+    padding-right: 0;
+}
 
 /**************************************  MEDIA QUERY   **************************************************/
 @media screen and (max-width: 800px) {
@@ -367,6 +378,4 @@ button:focus {
         margin-top: 3px;
         font-size: 2vh;
     }
-
-
 }

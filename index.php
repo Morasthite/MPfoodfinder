@@ -36,9 +36,8 @@ $fb = new Facebook\Facebook([
 <!--Angular controller binds data to the scope of the view. -->
 <body ng-controller="mainCtrl">
     <div id="display_contents">
-<!--      The below div holds dynamically loaded content from a template-->
+<!--The below div holds dynamically loaded content from a template-->
         <div id="view_content" ng-view></div>
-
     </div>
 </body>
 </html>
