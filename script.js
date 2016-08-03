@@ -323,8 +323,8 @@
             var btn_div = $("<div>").addClass("button-holder");
             var i_left = $("<i>").addClass("fa fa-arrow-left");
             var i_right = $("<i>").addClass("fa fa-arrow-right");
-            var prev_div = $("<div>").addClass("col-xs-2 result-button");
-            var next_div = $("<div>").addClass("col-xs-2 result-button");
+            var prev_div = $("<div>").addClass("col-xs-2 prev-button-div pull-left");
+            var next_div = $("<div>").addClass("col-xs-2 next-button-div pull-right");
             var nav_div = $("<div>").addClass("col-xs-12 result-button");
             var nav_text = $("<p>").text("Let's Go!");
             var next_btn = $("<div>").addClass("next-button").attr("data-position",i);

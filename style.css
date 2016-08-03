@@ -194,6 +194,7 @@ button:focus {
 .result-card {
     max-width: 400px;
     max-height: 600px;
+    position: absolute !important;
     height: 80%;
     width: 90%;
     position: relative;
@@ -244,12 +245,13 @@ button:focus {
     /* top: 16%; */
     /* transform: translate(-53%, -11%); */
     height: 8%;
-    margin-top: 3px;
+    margin-top: 20px;
     width: 90%;
 }
 
 .result-button {
     height: 100%;
+    padding-right: 0;
 }
 
 .prev-button i,
@@ -304,7 +306,7 @@ button:focus {
 
 .navigation-button p {
     text-align: center;
-    font-size: 3vh;
+    font-size: 1.5em;
     font-family: "Pacifico";
     text-shadow: 0 1px 1px black;
     position: absolute;
@@ -313,6 +315,14 @@ button:focus {
     transform: translate(-50%,-50%);
 }
 
+.prev-button-div {
+    padding-left: 0;
+    padding-right: 0;	
+}
+.next-button-div {
+    padding-left: 0;
+    padding-right: 0;
+}
 
 /**************************************  MEDIA QUERY   **************************************************/
 @media screen and (max-width: 800px) {
